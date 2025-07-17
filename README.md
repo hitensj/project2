@@ -1,4 +1,4 @@
-nullMortgage Calculator: A React Application
+Mortgage Calculator: A React Application
 Project Overview
 This project showcases a modern, user-friendly mortgage calculator built with React. It provides detailed financial insights, including estimated monthly payments, total loan cost, and an amortization schedule. Designed with clarity and accessibility in mind, it aims to simplify complex mortgage calculations for users.
 

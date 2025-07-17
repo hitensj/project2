@@ -7,18 +7,48 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+.npm
+.yarn/
+.pnpm-store/
+
+# Build artifacts
 dist
 dist-ssr
-*.local
+build # Common build output for Create React App, though Vite uses 'dist'
+out/ # Another common build output folder
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
+# Local .env files
+.env
+.env.local
+.env.*.local
+
+# Runtime files
+*.local
+*.tgz
+.DS_Store # macOS specific
+.idea     # IntelliJ/WebStorm specific
+.vscode/  # VS Code specific, ignore unless you have shared settings
+!.vscode/extensions.json # Keep extensions.json if you want to share recommended extensions
+
+# Testing
+/coverage
+/.nyc_output
+/test-results.xml
+/junit.xml
+
+# IDE specific files (already mostly covered, but good to be explicit)
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.bak
+*.orig
+npm-debug.log
+yarn-error.log
+
+# Temporary files
+.temp/
+.tmp/
